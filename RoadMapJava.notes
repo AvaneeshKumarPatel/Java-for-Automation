@@ -74,7 +74,7 @@ Helps manage script failures gracefully.
 
 🔹 Custom exceptions
 
-
+ 
 ✅ Stage 6: File Handling
 Used for reading test data (like Excel, config files).
 
