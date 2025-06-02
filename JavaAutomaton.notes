@@ -1,0 +1,186 @@
+Java Class and Object 
+
+Class- Class is a basicaly template, Class used createing Objects 
+
+// createing Class
+
+pakege learingJava;
+
+public class demo1
+{
+    // createing Objects
+     public static void main (String[] args){
+        Demo1 de = new Demo1();
+
+        new Demo1();
+        new Demo1();
+
+
+    }
+}
+
+// prrr
+
+pakege parcJava;
+
+public class FirstProgram {
+public static void main (String[] args){
+
+    System.out.println("This is Our First Program")
+}
+
+}
+
+// Single line comment 
+
+/*multiline  
+
+*comment
+*/ 
+
+// namingconventions 
+https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
+
+
+Naming Conventions In Java
+
+
+
+IdentifierType	                                        Rules for Naming	                                    Examples
+
+1. Packages                          The prefix of a unique package name is always written                        com.sun.eng
+                                     in all-lowercase ASCII letters and should be one of the                   com.apple.quicktime.v2
+                                     top-level domain names, currently com, edu, gov, mil, net, org,
+
+
+2. Classes                           Class names should be nouns, in mixed case with the first                   class Raster;
+                                     letter of each internal word capitalized                                   class ImageSprite    
+
+
+3. Interfaces	                     Interface names should be capitalized like class names.	                 interface RasterDelegate;
+                                                                                                                interface Storing;
+
+
+4. Methods	                         Methods should be verbs, in mixed case with the first letter                 run();
+                                     lowercase, with the first letter of each internal word capitalized.            getBackground();                                                                     runFast();
+                                                                                                                     runFast();
+
+
+5. Variables                    Except for variables, all instance, class, and class constants are in               int             i;
+                                mixed case with a lowercase first letter. Internal words start with capital         char            c;
+                                etters. Variable names should not start with underscore _ or dollar sign $          float           myWidth;
+                                characters, even though both are allowed.
+
+
+
+DATA TYPE IN Java
+
+Primitive DATA TYPE - byte, short, int, long ,float, double,boolean, and char
+
+Non-Primitive type - String, Arrays 
+
+
+
+Examples  DATA TYPE;
+
+package learingJava;
+
+public Class DTDemo{
+
+    public static void main( String[] args) {
+    byte bt = - 128;
+    short sht = 32767;
+    int myInt = 764765;
+    long lng = 324893L;
+
+
+    float myFloat = 1.3423f;
+    double myDouble =1.32434d
+
+
+    boolean bool = false;
+    char  ch = 's';
+
+DTDemo dtd = new DTDemo();
+
+String str = new String();
+
+String str1 = "This is stirng";
+
+    }
+}
+
+
+
+
+
+
+// type of variablename = value;
+
+int myNumber = 23;
+char ch = 'A';
+String str1 = "hello";
+
+
+
+
+Summary of Operators
+The following quick reference summarizes the operators supported by the Java programming language.
+
+Simple Assignment Operator
+=       Simple assignment operator
+
+Arithmetic Operators
++       Additive operator (also used
+        for String concatenation)
+-       Subtraction operator
+*       Multiplication operator
+/       Division operator
+%       Remainder operator
+
+
+Unary Operators
++       Unary plus operator; indicates
+        positive value (numbers are 
+        positive without this, however)
+-       Unary minus operator; negates
+        an expression
+++      Increment operator; increments
+        a value by 1
+--      Decrement operator; decrements
+        a value by 1
+!       Logical complement operator;
+        inverts the value of a boolean
+
+
+Equality and Relational Operators
+==      Equal to
+!=      Not equal to
+>       Greater than
+>=      Greater than or equal to
+<       Less than
+<=      Less than or equal to
+
+
+Conditional Operators
+&&      Conditional-AND
+||      Conditional-OR
+?:      Ternary (shorthand for 
+        if-then-else statement)
+
+
+Type Comparison Operator
+instanceof       Compares an object to 
+                a specified type 
+
+
+
+
+Bitwise and Bit Shift Operators
+~       Unary bitwise complement
+<<      Signed left shift
+>>      Signed right shift
+>>>     Unsigned right shift
+&       Bitwise AND
+^       Bitwise exclusive OR
+|       Bitwise inclusive OR

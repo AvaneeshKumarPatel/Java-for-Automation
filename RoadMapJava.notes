@@ -1,0 +1,128 @@
+Java Learning Roadmap for Automation Testing
+
+
+✅ Stage 1: Java Basics
+These are foundational concepts every tester needs.
+
+🔹 Java Syntax & Structure
+
+🔹 Data Types & Variables   
+
+🔹 Operators (arithmetic, relational, logical)
+
+🔹 Control Statements:
+
+if, else if, switch
+
+Loops: for, while, do-while
+
+✅ Stage 2: Object-Oriented Programming (OOP)
+Core for writing structured, reusable automation scripts.
+
+🔹 Classes & Objects
+
+🔹 Constructors
+
+🔹 this keyword
+
+🔹 Inheritance (extends)
+
+🔹 Polymorphism (method overloading & overriding)
+
+🔹 Encapsulation (getters/setters, private fields)
+
+🔹 Abstraction (abstract classes & interfaces)
+
+
+✅ Stage 3: Methods & Modifiers
+Learn how to define and use reusable logic.
+
+
+🔹 Method declaration and overloading
+
+🔹 Static vs Non-static
+
+🔹 Access Modifiers: public, private, protected, default
+
+🔹 Final keyword
+
+
+✅ Stage 4: Java Collections & Data Handling
+Used heavily in test data management.
+
+🔹 Arrays
+
+🔹 Collections Framework:
+
+ArrayList, LinkedList, HashSet, HashMap
+
+🔹 Iterating collections (for-each loop, Iterator)
+
+🔹 Generics
+
+🔹 Sorting and searching with Collections utility class
+
+
+✅ Stage 5: Exception Handling
+Helps manage script failures gracefully.
+
+🔹 Try-catch-finally blocks
+
+🔹 Multiple catch blocks
+
+🔹 throws and throw keywords
+
+🔹 Custom exceptions
+
+
+✅ Stage 6: File Handling
+Used for reading test data (like Excel, config files).
+
+🔹 Reading and writing files using File, FileReader, BufferedReader, etc.
+
+🔹 Working with Properties files
+
+🔹 Intro to external libraries (e.g., Apache POI – optional later)
+
+
+✅ Stage 7: Useful Java APIs & Libraries
+Common for automation scripting.
+
+🔹 String & StringBuilder
+
+🔹 Math and Random
+
+🔹 Date and Time APIs (Java 8+: LocalDate, LocalTime)
+
+🔹 System class and environment variables
+
+✅ Stage 8: Java 8+ Features (Optional but Useful)
+Useful in modern frameworks.
+
+🔹 Lambda expressions
+
+🔹 Streams API
+
+🔹 Functional interfaces
+
+🔹 Method references
+
+✅ Stage 9: Practical Java Setup
+🔹 Set up JDK
+
+🔹 Use an IDE (IntelliJ IDEA / Eclipse)
+
+🔹 Write, compile, and run Java programs
+
+🔹 Understand .class and .java files
+
+
+
+
+
+
+
+
+
+
+
