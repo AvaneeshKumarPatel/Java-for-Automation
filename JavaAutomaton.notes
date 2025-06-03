@@ -248,3 +248,37 @@ public class PracticeJava {
 		
 	}
 }	
+
+
+
+
+
+//  Ternary Operator 
+
+ Syntex=>
+// variable =  (condition) ? TrueExpression : FalseExpression 
+		
+
+Examples:- 
+
+
+
+package practicejava;
+
+public class TernaryOperator {
+
+	
+	public static void main(String[] args) {
+		
+		
+		// variable =  (condition) ? TrueExpression : FalseExpression 
+		
+		int num1 = 20;
+        int num2 = 40;
+        
+        String bigValue = (num2 < num1) ? "Nmuber 2 bada hai Number 1 se " : "Nhe bada hai" ;
+		
+		System.out.println(bigValue);
+	}
+	
+}
