@@ -184,3 +184,67 @@ Bitwise and Bit Shift Operators
 &       Bitwise AND
 ^       Bitwise exclusive OR
 |       Bitwise inclusive OR
+
+
+
+
+
+//  if, else if, 
+
+
+
+package practicejava;
+
+public class PracticeJava {
+
+	public static void main(String[] args)
+
+	{
+
+		int i = 10;
+
+		if (i < 9) {
+
+			System.out.println("Das se chota hai");
+		} else {
+
+			System.out.println("Aise he print kkr do");
+		}
+
+	}
+}
+
+
+
+// Nested if else if 
+
+
+ package practicejava;
+
+public class PracticeJava {
+
+	public static void main(String[] args)  {
+
+	
+	 int num1 = 40;
+	 int num2 = 20;
+	 int num3 = 30;
+	 
+	  if(num1  > num2 ) {
+		  	
+		  System.out.println("Number1 is greater than number 2");
+		  
+		  
+		if(num2<num3) {
+			
+			System.out.println("Inside Nested if, Jo bhe result hai print kar do  ");
+		}
+		else {
+			System.out.println("Nested else inside block");
+		}
+		
+	  }
+	  
+		
+	}
+}	
