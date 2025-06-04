@@ -277,8 +277,153 @@ public class TernaryOperator {
         int num2 = 40;
         
         String bigValue = (num2 < num1) ? "Nmuber 2 bada hai Number 1 se " : "Nhe bada hai" ;
+
+
+
+ Java Switch Statements
+
+Syntex Swith case 
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+
+
+
+Examples:-
+
+
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+}
+
+-----------------------------
+DAy-5, SDET 
+----------------------------------
+Looping/Iterative statement
+--------------------------------
+
+while loop
+do while loop
+for loop
+enhanced for loop / for each loop 
+
+// important things for Loops
+
+1) Initilization(where to start)
+2) condition(how many times)
+3) Inc/dec 
+
+--------------------------------------------
+
+
+-------------
+While loop
+----------------
+
+Syntax-
+
+while(condition){
+ statement;
+ Inc/dec
+}
+
+
+Examples:-
+public class WhileLoopJava {
+
+	public static void main(String[] args) {
 		
-		System.out.println(bigValue);
+		
+		int i = 1;
+		
+		while(i<=20) {
+			
+			System.out.println(i);
+			 i++;
+		}
 	}
 	
 }
+
+
+Examples:- 2 
+
+
+int i = 1;
+		
+		while(i<=10) {
+			
+			System.out.println(i + "Hello");
+			 i++;
+		}
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+do while loop
+----------------
+
+Syntax- 
+
+do
+{
+statement;
+inc/dec
+}whlile(condition);
+
+
+Examples:- 
+
+int i  = 1;
+		
+do
+{
+System.out.println(i);
+i++;
+}while(i<=10);
+	
+
+----------------------------------------------------------------------------------------
+For loop
+------
+
+Syntax-:
+for(Initilization;condition; Inc/dec)
+{
+        Statements;
+}
+
+
+
