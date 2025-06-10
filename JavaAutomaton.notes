@@ -577,5 +577,46 @@ public class TwoDimentionalArray {
 	}
 
 --------------------------------------------------------------------------------------------------------------------------------------
+Day-7
+--------
+
+ex1:- Search an element in array(linear search)
+
+Liner Search:- Every  element we are compareing 
+
+
+// Finding  element in this arry 
+
+
+class Main {
+    public static void main(String[] args) {
+     int a[] = {10,20,30,40,50};
+     int seacrch_element = 30;
+     boolean status= false;  // false - not found  true- found 
+       
+       for(int i=0; i<a.length; i++)
+       {
+           if(a[i]==seacrch_element)
+           {
+               System.out.println("Element Fount");
+               status = true;
+               break;
+           }
+       }
+       if(status ==false)
+       { 
+           System.out.println("Element not Found");
+       }
+       
+     
+    }
+}
+
+----------------------------------------------------------------------
+EX:2-
+Fing number of repetations
+
+
+
 
 
