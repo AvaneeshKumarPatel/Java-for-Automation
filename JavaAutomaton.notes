@@ -612,11 +612,117 @@ class Main {
     }
 }
 
-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 EX:2-
 Fing number of repetations
 
 
+public class FindDuplicateNum {
 
+	public static void main(String[] args) {
+		
+		int a[] = {100,200,300,400,100,300,200,100};
+		
+		int num = 100;
+		int count =0;
+		
+		for(int value:a)
+		
+		{
+			
+			if(value ==num)
+				
+			{
+				count++;
+			System.out.println(count);
+			}
+		}
+
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------\
+EX-3: Sorting 
+// We can print numbr acc order and decning order
+
+public class Sorting {
+
+	public static void main(String[] args) {
+	
+		int a[] = {100,300,89,500,400};
+		
+		String b[] = {"ABC", "XYZ", "BCQ","LGTV"};
+		
+//	 System.out.println(Arrays.toString(a));
+//		// sorting arrays 
+//      Arrays.sort(a);
+//      System.out.println(Arrays.toString(a));
+		
+		// sorting String arrays
+		
+		System.out.println("Before sorting String array");
+		
+		Arrays.sort(b);
+		System.out.println("After sorting String array"+ Arrays.toString(b));
+		
+	}
+
+}
+----------------------------------------------------------------------------
+
+EX:5- Print Array elements in reverse order
+
+public class ReverseArray {
+
+	public static void main(String[] args) {
+		// Printing Reverse Arrays
+		int a[] = {1,2,3,4,5,6,7,8,9,10};
+            		
+		
+		for(int i=a.length-1;i>=0;i--)
+		{
+			System.out.println(a[i]);    // output 10 9,8,7,6,5,4,3,2,1
+			
+		}
+	
+	}
+}
+
+
+--------------------------------------------------------------------------------------------------
+Taking Input from keybord  
+
+import java.util.Scanner;
+
+public class HowtoReadDataInRuntime {
+
+	public static void main(String[] args) {
+		
+		 // Taking inputs from keyboard  using this method
+		Scanner sc = new Scanner(System.in);
+		
+		// for Taking input from keyboard 
+		  
+	/*	System.out.println("Enter the Number");
+		 int num = sc.nextInt();
+		 System.out.println("Given Number is: "+num);
+		 */
+		
+		// For decimal number
+	/*	System.out.println("Enter the Decimal Number");
+		double num = sc.nextDouble();
+		System.out.println("Given Decimal Number is:"+num);
+		*/
+		
+		// For input String
+		
+		System.out.println("Enter your city Name");
+		String city = sc.next();
+		System.out.println("Your city is:"+ city);
+		
+	}
+
+}
 
 

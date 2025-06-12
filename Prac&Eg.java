@@ -284,3 +284,123 @@ public class TwoDimentionalArray {
 	}
 
 
+
+
+// Liner Search:- Every  element we are compareing 
+
+
+// Finding  element in this arry 
+
+
+class Main {
+    public static void main(String[] args) {
+     int a[] = {10,20,30,40,50};
+     int seacrch_element = 30;
+     boolean status= false;  // false - not found  true- found 
+       
+       for(int i=0; i<a.length; i++)
+       {
+           if(a[i]==seacrch_element)
+           {
+               System.out.println("Element Fount");
+               status = true;
+               break;
+           }
+       }
+       if(status ==false)
+       { 
+           System.out.println("Element not Found");
+       }
+       
+     
+    }
+}
+
+---------------------------------------------------------------------------------------------
+EX:2-
+// Fing number of repetations
+
+
+public class FindDuplicateNum {
+
+	public static void main(String[] args) {
+		
+		int a[] = {100,200,300,400,100,300,200,100};
+		
+		int num = 100;
+		int count =0;
+		
+		for(int value:a)
+		
+		{
+			
+			if(value ==num)
+				
+			{
+				count++;
+			System.out.println(count);
+			}
+		}
+
+	}
+
+}
+----------------------------------------------------------------------------------
+// Sortng mumber and words
+
+public class Sorting {
+
+	public static void main(String[] args) {
+	
+		int a[] = {100,300,89,500,400};
+		
+		String b[] = {"ABC", "XYZ", "BCQ","LGTV"};
+		
+//	 System.out.println(Arrays.toString(a));
+//		// sorting arrays 
+//      Arrays.sort(a);
+//      System.out.println(Arrays.toString(a));
+		
+		// sorting String arrays
+		
+		System.out.println("Before sorting String array");
+		
+		Arrays.sort(b);
+		System.out.println("After sorting String array"+ Arrays.toString(b));
+		
+	}
+
+}
+--------------------------------------------------------------------------------------
+// Taking Input from keyboard 
+import java.util.Scanner;
+
+public class HowtoReadDataInRuntime {
+
+	public static void main(String[] args) {
+		
+		 // Taking inputs from keyboard  using this method
+		Scanner sc = new Scanner(System.in);
+		
+		// for Taking input from keyboard 
+		  
+System.out.println("Enter the Number");
+		 int num = sc.nextInt();
+		 System.out.println("Given Number is: "+num);
+		 
+		
+		// For decimal number
+	System.out.println("Enter the Decimal Number");
+		double num = sc.nextDouble();
+		System.out.println("Given Decimal Number is:"+num);
+		
+		
+		// For input String
+		
+		System.out.println("Enter your city Name");
+		String city = sc.next();
+		System.out.println("Your city is:"+ city);
+		
+	}
+
+}
