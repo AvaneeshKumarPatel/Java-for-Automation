@@ -464,6 +464,7 @@ public class ArraysJava {
 		
 		//  Declaring array 
 		
+
 		// approach 1
 //		
 //		int a[]= new int[5];

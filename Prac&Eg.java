@@ -334,6 +334,7 @@ public class FindDuplicateNum {
 		
 		{
 			
+			
 			if(value ==num)
 				
 			{
