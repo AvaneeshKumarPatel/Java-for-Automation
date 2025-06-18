@@ -334,7 +334,7 @@ public class FindDuplicateNum {
 		
 		{
 			
-			
+
 			if(value ==num)
 				
 			{
@@ -402,6 +402,140 @@ System.out.println("Enter the Number");
 		String city = sc.next();
 		System.out.println("Your city is:"+ city);
 		
+	}
+
+}
+
+
+
+---------------------------------------------------------------------------------
+// String Method
+
+package practicejava;
+
+import java.util.Arrays;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		
+		
+		String s = "Hello";
+		String a= new String("Welcome");
+		String a2= new String("");
+		
+		// length() -  returns length of a string(number of characters)
+		System.out.println(s.length());  // 5
+		
+		// concat() - joining strings 
+		
+	    String s1 ="hello";
+	    String s2 = "world";
+	    System.out.println(s1+s2);           // helloworld
+	    System.out.println(s1.concat(s2));   // helloworld
+   
+    
+	   System.out.println("Welcome to"+ "Java Seris");  // Welcome toJava Seris
+
+	// trim() - remove spaces right and left side
+	
+	    String w = "   Welcome   ";
+	System.out.println("Before triming:"+ w.length());
+	System.out.println(w.trim());
+	System.out.println("After  triming:"+ w.trim().length());
+	
+	// charAt() - returns a character from a string based on index 
+	// index start from 0
+	
+	String r ="JavaSeliem";
+	System.out.println(r.charAt(3));  // a
+	System.out.println(r.charAt(0)); //J
+	
+	// contains()  - returns true/false
+	
+	 a = "welcome";
+	 
+	System.out.println(a.contains("wel"));  // true
+	System.out.println(a.contains("come"));  // true
+	System.out.println(a.contains("Wel"));   // false
+	System.out.println(a.contains("COME"));  // false
+	System.out.println(a.contains("welme"));  // false
+	
+	
+	  // equals() , equalsIngnoreCase() - compare strings
+	
+	a  ="welcome";
+	a2 ="welcome";
+	
+	System.out.println(a==a2);    // true
+	System.out.println(a.equals(a2)); // true
+	System.out.println(a.equals("Welcome"));    // false 
+	System.out.println(a.equalsIgnoreCase("Welcome")); // true
+	
+	
+	// replace() - replce single/multiple(sequance) of characters in a string
+	
+	
+	a ="welcome to selinum java python selinum C#";
+	
+	System.out.println(a.replace('e', 'X'));          // wXlcomX to sXlinum java python sXlXnum C#
+	
+	System.out.println(a.replace("selinum", "Playwrite"));   // welcome to Playwrite java python Playwrite C#
+	
+	//substring() - extract substring from the main string
+	// starting index - 0
+    // ending index - 1
+	 a = "Selenium";
+	 System.out.println(a.substring(1,5)); //elen
+	 System.out.println(a.substring(0,3)); // Sel
+	
+	 
+	 //toUpperCase()  toLowerCase
+	 
+	 a="Welcome";
+	System.out.println(a.toUpperCase()); 
+	System.out.println(a.toLowerCase()); 
+	
+	 
+	 // split() - split the string into multiple parts based on delimeter(space, at@,etc)
+	a ="abc123@gmail.com";
+	
+	String q[]= a.split("@");
+	System.out.println(Arrays.toString(q));   // [abc123, gmail.com]
+     System.out.println(q[0]);  // abc123
+     System.out.println(q[1]);  //gmail.com
+     
+     //ex1
+     String amout="$12,33,34";     // exp  123334
+     
+    System.out.println( amout.replace("$", ""));  // 12,33,34
+    System.out.println( amout.replace("$", "").replace(",", "")); // 123334
+
+    //ex2 
+    a="abc,123@xyz";          // abc   123  xyz
+    String arr[]=a.split(",");
+    System.out.println(Arrays.toString(arr));  // [abc, 123@xyz]
+      String arr2[]= arr[1].split("@");
+      System.out.println(Arrays.toString(arr2));  // [123, xyz]
+    System.out.println(arr[0]); // abc
+    System.out.println(arr2[0]); //123
+    System.out.println(arr2[1]); //xyz
+    
+    // ex3 
+    a = "abc 123 zyz";
+    String ar[]=a.split(" ");
+    System.out.println(Arrays.toString(ar));   // [abc, 123, xyz]
+    
+    // * % ^ &  (  ) - you cannot use as delimeters
+    
+    // ex4 
+    
+    String name="John kendny";
+     
+    System.out.println(name.contains("john"));  // false
+    
+   System.out.println(name.replace("J", "j").contains("john"));    // true
+    
 	}
 
 }
