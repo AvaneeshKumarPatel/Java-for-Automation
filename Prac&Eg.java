@@ -538,4 +538,126 @@ public class StringMethods {
     
 	}
 
+
+
 }
+
+
+package practicejava;
+
+public class StringComparison {
+
+	public static void main(String[] args) {
+		
+		// Case1
+		
+		 String s1 = "Welcome";
+		 String s2 = "Welcome";
+		 
+		 System.out.println(s1==s2);  // true
+		 System.out.println(s1.equals(s2)); // true
+		 
+		 
+		 //Case2
+		 String s3 = new String("Hello");
+		 String s4 = new String("Hello");
+		 
+		System.out.println(s3 ==s4);         // false    //== its compare the objects
+		System.out.println(s3.equals(s4));  // true     // Compare value of Objects 
+		
+		// Case3
+		
+		String s5 = "abc";
+		String s6 = new String("abc");
+		
+	System.out.println(s5==s6);          // false
+	System.out.println(s5.equals(s6));   // true
+	
+	// Case4 
+	
+	String a1 = "abc";
+	String a2 = new String("abc");
+	String a3 = a2;
+	
+	 System.out.println(a1 ==a2);      // false
+	 System.out.println(a1.equals(a2));  // true
+	 System.out.println(a2==a3);         // true, bcoz objects are same/equal
+	 System.out.println(a2.equals(a3));  // true
+	 
+	 System.out.println(a1==a3);          // false
+	 System.out.println(a1.equals(a3)); // true
+	 
+	 
+		 
+	}
+	
+
+}
+
+
+package practicejava;
+
+public class StringVsStringBufferVsStringBuilder {
+
+	public static void main(String[] args) {
+		
+		
+		// String - immutable
+		
+		String s = "welcome";
+		s.concat("to java");
+		System.out.println(s);   // immutable, cannot change original value of s
+		
+		// StringBuffer - mutable
+		
+		StringBuffer s2= new StringBuffer("Hi welcome");
+		s2.append("to java");
+		System.out.println(s2);  // Hi welcometo java // mutable
+
+		
+		// StringBulder - mutable
+		
+		StringBuilder s3 = new StringBuilder("Hello");
+		s3.append("world to java");
+		System.out.println(s3);   // Helloworld to java  // mutable
+
+		
+
+	}
+
+}
+
+
+package practicejava;
+
+import java.util.Arrays;
+
+public class MuteableVsImmuteable {
+
+	public static void main(String[] args) {
+		
+		
+	/*	int s[] = {50,69,30,10,90,70};
+		// mutable can change
+		
+	   System.out.println(Arrays.toString(s));
+       Arrays.sort(s); // mutable
+      System.out.println(Arrays.toString(s));
+      */ 
+      // immutable 
+      
+      String s2 = new String("welcome");
+      System.out.println(s2);  // welcome
+      
+      String concatstirng =  s2.concat("to java");
+      
+      System.out.println(s2); // welcome ----. immutable  we cannot change
+      
+      System.out.println(concatstirng);
+      
+      
+	}
+
+}
+
+

@@ -118,11 +118,34 @@ Useful in modern frameworks.
 
 
 
+------------------------
+Practice Questons IV
+---
+1) Check String is palindrome or not
+
+String s= "MADAM"
+Output: palindromI
+String s="Welcome"
+output: Not palindrom
+
+Ref link: https://www.youtube.com/watch?v=8BIUi4-4N4E
 
 
+2) Remove Junk or Special Characters in String
+Ref link: https://youtu.be/x0SghWslbsE
 
+w#$%e0lcome
 
+3) How To Remove White Spaces in a String
 
+Ref link: https://youtu.be/-MizOulnWVw
+
+4) Count Occurrences of a Character in a String
+Ref link: https://youtu.be/jbGxTi0bi7c
+
+5) Count Words in a String
+
+Ref link: https://youtu.be/dTWfNdfpr_g
 
 
 
