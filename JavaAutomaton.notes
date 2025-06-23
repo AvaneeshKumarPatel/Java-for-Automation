@@ -844,9 +844,9 @@ System.out.println("Welcome to"+ "Java Seris");  // Welcome toJava Seris
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 Day-9
---------------
+-----------------------------
 Reverse string
------------------
+------------------------------
 storing string to variable  class
 stirngBuffer a  = "Test";
 StringBuilder a = "Test";
@@ -885,7 +885,7 @@ StringBuilder a = new StringBuilder("Test");
 		// Approach3: Using StringBuffer Class 
 		StringBuilder s = new StringBuilder("Apple");
 		System.out.println("resversed string:"+ s.reverse());
-------------------------------------------------
+----------------------------------------------------------------------------------------
 immutable - we connot change
 muteable - we can change
 mutable can change
@@ -905,7 +905,7 @@ mutable can change
       
       System.out.println(concatstirng);
 
---------------------------------------------------------	  
+-----------------------------------------------------------------------------
 String - immutable, cannot change 
 StringBuffer- mutable, can change
 StringBuilder- mutable, can change
@@ -931,7 +931,7 @@ StringBuilder- mutable, can change
 		s3.append("world to java");
 		System.out.println(s3);   // Helloworld to java  // mutable
 
--------------------------------------------------------------
+------------------------------------------------------------------------------
 String Comparison
 ------------
 1) == equal()
@@ -977,7 +977,7 @@ public class StringComparison {
 	String a3 = a2;
 	
 	 System.out.println(a1 ==a2);      // false
-	 System.out.println(a1.equals(a2));  // true
+	 System.out.println(a1.equals(a2));  // true	
 	 System.out.println(a2==a3);         // true, bcoz objects are same/equal
 	 System.out.println(a2.equals(a3));  // true
 	 
@@ -987,5 +987,107 @@ public class StringComparison {
 		 
 	}
 	
+
+}
+
+------------------------------------------------------------------------------------------------------------------------
+Day-10
+---------
+Objects Oriented Programming
+------------
+Class  - class is collections of attributtes(variable) and behavior(Methods).
+Object - Object is an instance of class.
+
+Polymorphism -
+Encapsulation-
+Inheritance  -
+Data Abstraction-
+
+Diffrece between Class and Objects;
+------
+Class:-
+-----
+1)Class is collections of variable and Methods.
+2) Class is logical entity/blue print.
+3) will not occupy space in the memory.
+
+Syntax
+clas Employe
+{
+	Variables
+	Methods
+}
+
+--------
+Object:-
+----------
+1) object is instance of a class/object will be created by using class.
+2) object is physical entity.
+3) occupy space in the memory.
+4) We can create multiple objects for single class
+
+object Syntex
+Employee emp  = new Employee();
+Employee emp2 = new Employee();
+Employee emp3 = new Employee();
+Employee emp4 = new Employee();
+
+----------------------------------
+Examples
+-----
+package practicejava;
+
+public class EemployeeClass {
+
+	// Variable 
+	int eid;
+	String empName;
+	int sal;
+	String job;
+	
+	
+	//Methods 
+	// if want nothing return any type than use void 
+
+	void display()
+	{
+	System.out.println( "Employee name:"+empName);	
+	System.out.println(eid);	
+	System.out.println(sal);
+	System.out.println(job);
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) 
+	
+	{
+		EemployeeClass emp1  = new EemployeeClass(); // object
+        emp1.eid=101;
+        emp1.empName="jhon";
+        emp1.job="manager";
+        emp1.sal=50000;
+        emp1.display();
+        
+        
+        EemployeeClass emp2 = new EemployeeClass();  
+        emp2.eid=23423;
+        emp2.job="Developer";
+        emp2.sal=4554;
+        emp2.empName="dey";
+        
+        //System.out.println(emp2.empName);
+    
+        emp2.display();
+        
+	}
 
 }
