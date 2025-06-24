@@ -1063,9 +1063,7 @@ public class EemployeeClass {
 	
 	
 	
-	
-	
-	
+
 	
 	public static void main(String[] args) 
 	
@@ -1089,5 +1087,220 @@ public class EemployeeClass {
         emp2.display();
         
 	}
+
+}
+
+----------------------------------------------------------------------------
+Day-11
+------
+Methods - block or group of stataements which will perfrom certain task 
+          we have to call the method though object.
+
+1) No params  No return value
+2) no pramas  No return value
+3) Takes params   No return values
+4) Takes pramas Returns value
+
+String s = new String("welcome");
+
+int len = s.lendth()  --no params,  return value 
+String sub =s.substring(2,5)
+
+---------------------------------
+
+Examples:- 
+
+package day11;
+
+public class Greetings {
+	
+// 1) No params No retrun value 
+	
+ void m1()
+{
+	System.out.println("Hello....");
+	
+}
+	// 2) No params Retrun value
+ String m2()
+ {
+	 return("Hello how are you there??");
+ }
+ 
+ // 3) Takes params No return value 
+ 
+   void m3(String name)
+ {
+	 
+ System.out.println("Hi"+ name);
+ }
+ 
+   // 4) Takes params and  return values 
+   
+   String m4(String name)
+   {
+	   return("Hello"+ name);
+	   
+   }
+}
+
+
+---------------------
+
+package day11;
+
+public class GreetingMainclss {
+
+	public static void main(String[] args)
+	
+	{
+		
+		 Greetings gr = new  Greetings();
+		 
+		gr.m1();  // 1 
+        String s = gr.m2();     // 2
+        System.out.println(s); // 3
+        
+        gr.m3("Jhon");
+        
+       String s2 = gr.m4("Avnish");   // 4
+       System.out.println(s2);
+	}
+
+}
+---------------------------------------
+How many ways we can store data into variable
+-----------------
+1) By using object reference variable
+2) Method
+3) Constructors 
+
+What is the Diffrece between Constructors and Method?
+Method:
+--------
+1) Method name can be anything
+2) Method may or may not return a value
+3) if method is ot returning any value then specify void
+4) Method can take parameters/ arguments
+5) We have to invoke/call Methods explicitely through object
+6) used for specifiing logic
+
+Constructors:
+------------
+1) Constructors name should be same as class name.
+2) Constructors will never retrun a value (not evn void)
+3) We don't specify teh void
+4) Constructors can take parameters/arguments 
+5) Constructors automatically invoke at the time of object creation.
+6) used for Initilization the value of the variable
+
+------------------------------------------------------------------------------------------------
+
+
+package day11;
+
+public class StudentClass {
+
+	int sid;
+	String sname;
+	char grade;
+	
+	void printStudentData()
+	{
+		System.out.println(sid+ ""+ sname);
+	}
+	
+	void setStudentData(int id, String name, char gr)
+	{
+		sid =id;
+		sname=name;
+		grade=gr;
+		
+	}
+	
+	StudentClass(int id, String name, char gr)
+	{
+		sid =id;
+		sname=name;
+		grade=gr;
+		
+	}
+}
+
+
+
+
+
+
+
+
+package day11;
+
+public class StudentMain {
+
+	public static void main(String[] args) 
+	
+	{
+		// StudentClass stu = new StudentClass();
+		
+		// 1) using object refrence variable , storing data
+         // class variable 
+		
+		/* stu.sid=345;
+         stu.grade ='A';
+         stu.sname ="Ram";
+         
+         stu.printStudentData();
+         */ 
+		
+		//  2) Using method 
+		 // stu.setStudentData(100, "David", 'C');  // local variable 
+         
+		 // stu.printStudentData();
+		
+		
+		// 3) Using constructor
+	
+		StudentClass stu = new StudentClass(100,"Mohan",'e');
+		
+		stu.printStudentData();
+		
+	}
+
+}
+
+-------------------------------------------------------
+Types of Constructors 
+---------------------
+1) Default Constructors   
+ex:- 
+
+public clas ConstructorsDemo{
+int x,y;
+
+ConstructorsDemo  //  Default Constructors
+{
+  x=100;
+  y=300;
+}
+
+}
+
+2) Parameerized Constructors
+ex:-
+ConstructorsDemo(int a, int b )  //  Parameerized Constructors
+{
+	x=a;
+	y=b;
+
+}
+
+void sum()
+{
+	System.out.println(x+y)
+}
+
+
+public static void main(String[] args){
 
 }
