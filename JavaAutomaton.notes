@@ -1304,3 +1304,122 @@ void sum()
 public static void main(String[] args){
 
 }
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Day-12
+-----
+Polymorphism:- One thing can have many forms.
+
+we can achive Polymorphism using overloading.
+ex-
+void m1()
+void m1()
+void m1()
+
+4 Rules are applicalble
+1) Method names should be same.
+2) Number of parameters should be Diffrent.
+3) Data type of parameters should be Diffrent.
+4) Order of parameters should be Diffrent.
+
+
+Examples:-
+
+package day12;
+
+public class adder {
+	
+int a =10, b=20;
+
+void sum()  // 1
+{
+	System.out.println(a+b);
+}
+
+void sum(int x,int y)     // 2
+{
+	System.out.println(x+y);
+}
+
+void sum(int x,double y)     // 3
+{
+	System.out.println(x+y);
+}
+
+void sum(double x, int y)     // 4
+{
+	System.out.println(x+y);
+}
+
+}
+
+--------------------------------------------------------------------------
+
+Encapsulation:- Wrapping up of data and Methods in to single unit(class).
+-------
+1) All variable should be private.
+2) For every variable there should be 2 methods(get & set).
+3) Variable can be oprated only thourgh methods.
+
+
+Examples:-
+
+package day12;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Account acc = new Account();
+	
+		acc.setAccno(101);
+		acc.setAmount(3000);
+		acc.setName("Jhon");
+		
+		
+	 System.out.println(acc.accno);
+	 System.out.println(acc.amount);
+	 System.out.println(acc.name);
+	 
+	}
+
+-------------------------------------------------------------------
+Overloading
+-----------
+Examples:-
+---
+package day12;
+
+public class OverloadingMainMethod {
+
+	 void main(int x)
+	 {
+		 System.out.println(x);
+	 }
+	
+	 void main(String s)
+	 {
+		 System.out.println(s);
+	 }
+	  void main(String s1, String s2)
+	  {
+		  System.out.println(s1+s2);
+	  }
+	
+
+	
+	public static void main(String[] args)
+	{		
+	
+		OverloadingMainMethod ov = new OverloadingMainMethod();
+		ov.main(100);
+		ov.main("Hello");
+		ov.main("hi","Jhon");
+		
+	}
+
+}
+
