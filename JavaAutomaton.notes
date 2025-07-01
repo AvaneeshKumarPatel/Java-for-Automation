@@ -1018,7 +1018,7 @@ clas Employe
 	Methods
 }
 
---------
+---------
 Object:-
 ----------
 1) object is instance of a class/object will be created by using class.
@@ -1033,6 +1033,7 @@ Employee emp3 = new Employee();
 Employee emp4 = new Employee();
 
 ----------------------------------
+
 Examples
 -----
 package practicejava;
@@ -1045,7 +1046,6 @@ public class EemployeeClass {
 	int sal;
 	String job;
 	
-	
 	//Methods 
 	// if want nothing return any type than use void 
 
@@ -1057,14 +1057,11 @@ public class EemployeeClass {
 	System.out.println(job);
 	
 	
-	
 	}
 	
 	
 	
-	
 
-	
 	public static void main(String[] args) 
 	
 	{
@@ -1145,7 +1142,7 @@ public class Greetings {
 }
 
 
----------------------
+------------------------------
 
 package day11;
 

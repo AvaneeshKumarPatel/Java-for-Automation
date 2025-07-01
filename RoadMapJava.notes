@@ -62,7 +62,6 @@ ArrayList, LinkedList, HashSet, HashMap
 
 🔹 Sorting and searching with Collections utility class
 
-
 ✅ Stage 5: Exception Handling
 Helps manage script failures gracefully.
 
@@ -74,7 +73,6 @@ Helps manage script failures gracefully.
 
 🔹 Custom exceptions
 
- 
 ✅ Stage 6: File Handling
 Used for reading test data (like Excel, config files).
 
@@ -83,7 +81,6 @@ Used for reading test data (like Excel, config files).
 🔹 Working with Properties files
 
 🔹 Intro to external libraries (e.g., Apache POI – optional later)
-
 
 ✅ Stage 7: Useful Java APIs & Libraries
 Common for automation scripting.
