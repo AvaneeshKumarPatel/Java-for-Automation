@@ -1422,6 +1422,79 @@ public class OverloadingMainMethod {
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day-13 -Pending
+Day-13 - This keyword always represents class/object
+
+2 Types of variablrs
+----
+1) class variable/ instance variable
+2) local variable
+
+
+ex-
+pakege day13;
+
+public class ThisKeyword {
+
+int x,y;  // class variables/ instance variable
+
+ThisKeyword(int a, int b) {
+	x=a;
+	y=b;
+
+}
+	void display()
+	{
+		System.out.println(x);
+		System.out.println(y);
+
+	}
+	public static void main (String[] args){
+	
+	ThisKeyword th=new ThisKeyword(100,200);
+	th.display();
+	}
+	
+	}
+
+ 
+------------------
+!Static keyword  
+------------------
+static keyword can be applied for variable & methods 
+
+static  variable 
+static method
+
+non- static variable
+non-static methods
+
+1) static methods can access static stuff directly (without object).
+2) static methods an access non-staticfull through object.
+3) non-static methods can access everything directly.
+
+Here are the Examples-
+pakege day13;
+public class StaticDemo {
+
+    static int a = 10;   // static variable
+    int b = 20;          // non-static variable
+
+    static void m1() {   // static method
+        System.out.println("this is m1 static method...");
+    }
+
+    void m2() {          // non-static method
+        System.out.println("this is m2 non-static method...");
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(a);  // static variable access
+        m1();                   // static method call
+
+        StaticDemo obj = new StaticDemo();
+        obj.m2();               // non-static method call
+    }
+}
 
 
