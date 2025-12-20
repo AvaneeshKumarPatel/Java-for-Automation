@@ -1498,3 +1498,94 @@ public class StaticDemo {
 }
 
 
+Day-14 - 
+How to pass parameters to main method??
+
+Examples- 
+package day14;
+public class passingParamstoMainMethod {
+	 public static void main(String args[] ) {
+
+		System.out.println(args.length);
+
+		for(String value:args)
+		{
+			System.out.println(value);
+		}
+	 }
+
+	
+}
+
+-----------
+Inheritance 
+-----------
+-Aquiring all the propertis (Variable) & behaviour (methods) from one class to another class is call Inheritance. 
+
+Objective
+---------
+1. re-useablity
+2.Avoid duplication
+
+Types of Inheritance-
+----------------
+1.Single 
+2.Multi level
+3.hierachy
+4.multiple
+
+
+1.Single Examples- 
+pakage day 14;
+
+class A {
+
+	int a 100;
+	void display()
+	{
+		System.out.println(a);
+
+	}
+}
+class B  extends A
+{
+	int b =200;
+	void show()
+	{
+		System.out.println(b);
+
+	}
+}
+
+public class InheritanceTypes {
+	public static void main (String[] args ) {
+      B bobj=new B();
+	  System.out.println(bobj.a);
+	  	  System.out.println(bobj.b);
+		  bobj.display();
+		  bobj.show();
+	}
+}
+
+2. multi lavel -
+
+class C extends b
+{
+	int c=300;
+
+	void print()
+	{
+		System.out.println(c);
+	}
+}
+
+C cobj=new C();
+ cobj.a=100;
+ cobj.b=200;
+ cobj.c=300;
+
+ cobj.display();
+ cobj.show();
+ cobj.print();
+ 
+ 
